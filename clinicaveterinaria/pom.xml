@@ -5,14 +5,19 @@
 	<groupId>es.ieslaarboleda</groupId>
 	<artifactId>clinicaveterinaria</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.release>21</maven.compiler.release>
+	</properties>
 	<dependencies>
 		<dependency>
+		<!-- Implementacion de JDBC para MySQL-->
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+		<!-- Dependencias de JavaFX -->
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-base</artifactId>
 			<version>21.0.7</version>

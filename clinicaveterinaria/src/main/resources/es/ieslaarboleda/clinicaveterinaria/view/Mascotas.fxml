@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ieslaarboleda.clinicaveterinaria.controller.MascotasController">
+   <children>
+      <VBox layoutX="2.0" layoutY="1.0" prefHeight="278.0" prefWidth="233.0">
+         <children>
+            <Label text="Nombre" />
+            <TextField fx:id="txtNombre" promptText="Nombre" />
+            <Label text="Especie" />
+            <TextField fx:id="txtEspecie" promptText="Especie" />
+            <Label text="Raza" />
+            <TextField fx:id="txtRaza" promptText="Raza" />
+            <Label text="Edad" />
+            <TextField fx:id="txtEdad" promptText="Edad" />
+            <ComboBox fx:id="comboSelecCliente" prefHeight="25.0" prefWidth="240.0" promptText="Seleccionar Cliente" />
+            <Button mnemonicParsing="false" onAction="#guardarMascota" prefHeight="25.0" prefWidth="236.0" text="Guardar" />
+            <Button mnemonicParsing="false" onAction="#eliminarMascota" prefHeight="25.0" prefWidth="234.0" text="Eliminar" />
+            <Button mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="25.0" prefWidth="233.0" text="Limpiar" />
+         </children></VBox>
+      <TableView fx:id="tableMascotas" layoutX="236.0" prefHeight="400.0" prefWidth="364.0">
+         <columns>
+            <TableColumn fx:id="colMascota" prefWidth="63.0" text="MASCOTA" />
+            <TableColumn fx:id="colNombre" prefWidth="69.0" text="NOMBRE" />
+            <TableColumn fx:id="colEspecie" prefWidth="57.0" text="ESPECIE" />
+            <TableColumn fx:id="colRaza" prefWidth="58.0" text="RAZA" />
+            <TableColumn fx:id="colEdad" prefWidth="51.0" text="EDAD" />
+            <TableColumn fx:id="colCliente" prefWidth="65.0" text="CLIENTE" />
+         </columns>
+      </TableView>
+      <Button layoutX="64.0" layoutY="290.0" mnemonicParsing="false" onAction="#verClientes" prefHeight="50.0" prefWidth="109.0" text="Ver Clientes" />
+   </children>
+</AnchorPane>
